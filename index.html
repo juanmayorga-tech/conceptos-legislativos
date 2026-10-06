@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guía de Conceptos – Legislación Comercial y Tributaria</title>
+<meta name="description" content="Guía de apoyo para dictar Legislación Comercial y Tributaria: conceptos en lenguaje sencillo, cómo funcionan en la práctica y la ley o norma exacta en la que se basan.">
+<style>
+  :root{
+    --bg:#ffffff;
+    --bg-alt:#f6f7f9;
+    --text:#1b1f24;
+    --text-muted:#5b6472;
+    --accent:#8a1f2d;
+    --accent-soft:#fbecee;
+    --border:#e2e5ea;
+    --table-head:#2f3540;
+    --table-head-text:#ffffff;
+    --row-alt:#f6f7f9;
+    --note-bg:#eef3f8;
+    --note-border:#b9cbe0;
+    --warn-bg:#fdf3e7;
+    --warn-border:#e8c28a;
+    --link:#8a1f2d;
+    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#14171c;
+      --bg-alt:#1b1f26;
+      --text:#e7e9ec;
+      --text-muted:#9aa3b0;
+      --accent:#e0808c;
+      --accent-soft:#2a1b1e;
+      --border:#2b313b;
+      --table-head:#242a33;
+      --table-head-text:#f0f1f3;
+      --row-alt:#1b1f26;
+      --note-bg:#1a2733;
+      --note-border:#355066;
+      --warn-bg:#2b2416;
+      --warn-border:#5a4a26;
+      --link:#e0808c;
+    }
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:var(--font-sans);
+    line-height:1.6;
+    font-size:17px;
+  }
+  .wrap{
+    max-width:820px;
+    margin:0 auto;
+    padding:0 20px 80px;
+  }
+  header.page-head{
+    padding:48px 0 28px;
+    border-bottom:1px solid var(--border);
+    margin-bottom:28px;
+  }
+  header.page-head h1{
+    font-size:1.9rem;
+    line-height:1.25;
+    margin:0 0 10px;
+    color:var(--text);
+  }
+  .byline{
+    color:var(--text-muted);
+    font-size:0.95rem;
+    margin:0 0 18px;
+  }
+  .lead{
+    font-size:1.08rem;
+    color:var(--text);
+    margin:0 0 14px;
+  }
+  .disclaimer{
+    font-size:0.88rem;
+    color:var(--text-muted);
+    font-style:italic;
+    margin:0;
+  }
+  nav.toc{
+    background:var(--bg-alt);
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:18px 22px;
+    margin-bottom:36px;
+  }
+  nav.toc h2{
+    font-size:0.78rem;
+    text-transform:uppercase;
+    letter-spacing:.06em;
+    color:var(--text-muted);
+    margin:0 0 10px;
+  }
+  nav.toc ol{
+    margin:0;
+    padding-left:1.2em;
+    columns:2;
+    column-gap:24px;
+  }
+  nav.toc li{
+    margin-bottom:6px;
+    break-inside:avoid;
+  }
+  nav.toc a{
+    color:var(--text);
+    text-decoration:none;
+  }
+  nav.toc a:hover{ color:var(--accent); text-decoration:underline; }
+  section.unit{
+    padding-top:12px;
+    margin-bottom:46px;
+    scroll-margin-top:18px;
+  }
+  section.unit h2{
+    font-size:1.4rem;
+    border-bottom:2px solid var(--accent);
+    padding-bottom:8px;
+    margin:0 0 18px;
+  }
+  section.unit p{ margin:0 0 14px; }
+  section.unit ul, section.unit ol{ margin:0 0 14px; padding-left:1.4em; }
+  section.unit li{ margin-bottom:6px; }
+  a{ color:var(--link); }
+  strong{ color:var(--text); }
+  .practica{
+    background:var(--note-bg);
+    border:1px solid var(--note-border);
+    border-left:4px solid var(--note-border);
+    border-radius:6px;
+    padding:12px 16px;
+    margin:0 0 14px;
+    font-size:0.97rem;
+  }
+  .base-legal{
+    background:var(--accent-soft);
+    border-left:4px solid var(--accent);
+    border-radius:6px;
+    padding:10px 16px;
+    margin:0 0 6px;
+    font-size:0.95rem;
+  }
+  .importante{
+    background:var(--warn-bg);
+    border:1px solid var(--warn-border);
+    border-left:4px solid var(--warn-border);
+    border-radius:6px;
+    padding:14px 18px;
+    margin:0 0 14px;
+  }
+  table{
+    width:100%;
+    border-collapse:collapse;
+    margin:0 0 18px;
+    font-size:0.93rem;
+  }
+  caption{ caption-side:top; text-align:left; font-weight:600; margin-bottom:6px; }
+  th, td{
+    border:1px solid var(--border);
+    padding:9px 12px;
+    text-align:left;
+    vertical-align:top;
+  }
+  thead th{
+    background:var(--table-head);
+    color:var(--table-head-text);
+  }
+  tbody tr:nth-child(even){ background:var(--row-alt); }
+  .back-top{
+    display:inline-block;
+    font-size:0.82rem;
+    color:var(--text-muted);
+    text-decoration:none;
+    margin-top:2px;
+  }
+  .back-top:hover{ color:var(--accent); }
+  footer.sources{
+    border-top:1px solid var(--border);
+    padding-top:26px;
+    margin-top:10px;
+  }
+  footer.sources h2{ font-size:1.2rem; margin:0 0 10px; }
+  footer.sources p{ color:var(--text-muted); font-size:0.92rem; margin:0 0 14px; }
+  footer.sources ul{ padding-left:1.2em; columns:2; column-gap:24px; }
+  footer.sources li{ margin-bottom:8px; break-inside:avoid; font-size:0.93rem; }
+  @media (max-width:600px){
+    body{ font-size:16px; }
+    header.page-head{ padding:32px 0 22px; }
+    header.page-head h1{ font-size:1.5rem; }
+    nav.toc ol, footer.sources ul{ columns:1; }
+    table{ font-size:0.86rem; }
+    th, td{ padding:7px 8px; }
+  }
+  @media print{
+    nav.toc{ display:none; }
+    .back-top{ display:none; }
+    body{ font-size:12pt; }
+    a{ color:var(--text); text-decoration:underline; }
+  }
+</style>
+</head>
+<body id="top">
+<div class="wrap">
+
+  <header class="page-head">
+    <h1>Guía de Conceptos – Legislación Comercial y Tributaria</h1>
+    <p class="byline">6 de octubre de 2026 · Juan Camilo Mayorga</p>
+    <p class="lead">Guía de apoyo para dictar las Unidades 1 a 7 del programa, con el concepto explicado en lenguaje sencillo, cómo funciona en la práctica y la ley o norma específica en la que se basa, para poder citarla con seguridad en clase.</p>
+    <p class="disclaimer">Guía de apoyo docente — no constituye asesoría legal o tributaria formal.</p>
+  </header>
+
+  <nav class="toc" aria-label="Tabla de contenido">
+    <h2>Contenido</h2>
+    <ol>
+      <li><a href="#unidad-1">Fundamentos del Derecho Comercial</a></li>
+      <li><a href="#unidad-2">Constitución Legal de Empresa</a></li>
+      <li><a href="#unidad-3">Régimen Tributario Colombiano</a></li>
+      <li><a href="#unidad-4">Facturación Electrónica</a></li>
+      <li><a href="#unidad-5">IVA y Retención en la Fuente</a></li>
+      <li><a href="#unidad-6">Comercio Electrónico y Normatividad (Ley 527 de 1999)</a></li>
+      <li><a href="#unidad-7">Protección al Consumidor (Ley 1480 de 2011)</a></li>
+      <li><a href="#fuentes">Fuentes consultadas</a></li>
+    </ol>
+  </nav>
+
+  <main>
+
+    <section class="unit" id="unidad-1">
+      <h2>Unidad 1 — Fundamentos del Derecho Comercial</h2>
+      <p>El derecho comercial colombiano se rige principalmente por el <a href="https://normativa.colpensiones.gov.co/compilacion/docs/codigo_comercio.htm" target="_blank" rel="noopener">Código de Comercio</a> (Decreto 410 de 1971).</p>
+      <p><strong>Comerciante</strong> (Art. 10): es quien se ocupa <strong>profesionalmente</strong> —de manera habitual, no ocasional— en alguna actividad que la ley considera mercantil. La calidad de comerciante se adquiere incluso si la actividad se ejerce por medio de apoderado o intermediario. Pregunta clave para distinguirlo en clase: ¿la persona vendió algo una sola vez (no es comerciante) o lo hace de forma recurrente como su actividad económica (sí lo es)?</p>
+      <p><strong>Actos mercantiles</strong> (Art. 20): el Código enumera cerca de 19 categorías de actos de comercio —compraventa para reventa, arrendamientos, operaciones bancarias, seguros, transporte, manufactura, construcción, explotación de recursos naturales, entre otras—. El Art. 24 aclara que esta lista es <strong>declarativa, no taxativa</strong>: pueden existir otros actos mercantiles por analogía, lo que sirve para explicar negocios digitales que no existían en 1971 (dropshipping, marketplaces, etc.).</p>
+      <p><strong>Empresa</strong> (Art. 25): toda actividad económica organizada para la producción, transformación, circulación, administración o custodia de bienes, o para la prestación de servicios, desarrollada mediante uno o más establecimientos de comercio.</p>
+      <p class="practica">Cómo funciona en la práctica: un estudiante que vende postres una sola vez para un evento familiar no es comerciante; si abre una cuenta de Instagram y vende todas las semanas, ya ejerce una actividad mercantil y debería formalizarse (ver Unidad 2).</p>
+      <p class="base-legal"><strong>Base legal:</strong> Código de Comercio (Decreto 410 de 1971), Arts. 10, 20, 24 y 25.</p>
+      <a class="back-top" href="#top">↑ Volver al contenido</a>
+    </section>
+
+    <section class="unit" id="unidad-2">
+      <h2>Unidad 2 — Constitución Legal de Empresa</h2>
+      <p><strong>Tipos de sociedad más usados:</strong> persona natural comerciante (sin separar el patrimonio personal del patrimonio del negocio) y Sociedad por Acciones Simplificada (SAS), creada por la <a href="https://www.camaraaguachica.org.co/files/ley-transparencia/normativa/aplicable/registro-mercantil/leyes/Ley-1258-de-2008.pdf" target="_blank" rel="noopener">Ley 1258 de 2008</a>, hoy la forma societaria más usada en Colombia por su flexibilidad.</p>
+      <p>La SAS puede constituirse por una sola persona (natural o jurídica) o varias, mediante <strong>documento privado</strong> inscrito en la Cámara de Comercio —solo se exige escritura pública si se aportan bienes inmuebles—. La responsabilidad de los accionistas se limita al monto de sus aportes (no responden con su patrimonio personal por las deudas de la sociedad), y los estatutos se pueden adaptar casi libremente (objeto social indeterminado, duración indefinida, un solo órgano de administración, etc.).</p>
+      <p><strong>Registro mercantil:</strong> todo comerciante y toda sociedad comercial deben matricularse en el registro mercantil de la Cámara de Comercio de su domicilio (Art. 19 num. 1 del Código de Comercio), cuyo objeto es "llevar la matrícula de los comerciantes y de los establecimientos de comercio, así como la inscripción de todos los actos" (Art. 26) y que es público: cualquiera puede consultarlo. La matrícula <strong>se renueva cada año, dentro de los tres primeros meses</strong> (Art. 33). No renovarla impide certificar ante bancos, proveedores o clientes la existencia y representación legal de la empresa.</p>
+      <p><strong>Pasos prácticos para constituir una empresa:</strong></p>
+      <ol>
+        <li>Elegir el tipo societario (para la mayoría de emprendimientos digitales, SAS).</li>
+        <li>Redactar y radicar el documento de constitución en la Cámara de Comercio del domicilio.</li>
+        <li>Obtener la matrícula mercantil y el certificado de existencia y representación legal.</li>
+        <li>Tramitar el RUT (Registro Único Tributario) ante la DIAN.</li>
+        <li>Abrir cuenta bancaria a nombre de la empresa.</li>
+        <li>Registros adicionales según la actividad (INVIMA para alimentos, Sayco-Acinpro si usa música, etc.).</li>
+      </ol>
+      <p class="practica">Cómo funciona en la práctica: una tienda online que hoy opera a nombre de una persona natural, al crecer, normalmente migra a una SAS para separar el patrimonio del dueño del de la empresa y facilitar la entrada de socios o inversionistas.</p>
+      <p class="base-legal"><strong>Base legal:</strong> Ley 1258 de 2008 (SAS); Código de Comercio, Arts. 19, 26 y 33 (registro y matrícula mercantil).</p>
+      <a class="back-top" href="#top">↑ Volver al contenido</a>
+    </section>
+
+    <section class="unit" id="unidad-3">
+      <h2>Unidad 3 — Régimen Tributario Colombiano</h2>
+      <p>El sistema tributario colombiano se basa en el Estatuto Tributario (Decreto 624 de 1989) y distingue impuestos <strong>nacionales</strong> (renta, IVA, impuesto al consumo, GMF o 4x1000) de impuestos <strong>territoriales</strong> (ICA —industria y comercio, municipal—, predial, impuesto de vehículos).</p>
+      <p><strong>UVT (Unidad de Valor Tributario):</strong> es la unidad de medida que usa la DIAN para fijar topes, bases y sanciones sin reescribir la norma cada año. Para 2026 la UVT es de <strong>$52.374</strong>, fijada mediante la <a href="https://siemprealdia.co/colombia/impuestos/uvt-2026/" target="_blank" rel="noopener">Resolución DIAN 000238 del 15 de diciembre de 2025</a>, un incremento del 5,17&nbsp;% frente a los $49.799 de 2025 (variación del IPC de ingresos medios certificada por el DANE).</p>
+      <p><strong>Régimen Simple de Tributación (RST):</strong> régimen opcional (Ley 1943 de 2018 y Ley 2010 de 2019) que unifica en un solo pago anual, con anticipos bimestrales, el impuesto de renta, el ICA, el impuesto de avisos y tableros y la sobretasa bomberil. Para pertenecer en 2026 los ingresos brutos del año anterior deben ser inferiores a 100.000 UVT (cerca de $5.237 millones). Tarifas según la actividad:</p>
+      <table>
+        <thead><tr><th>Grupo de actividad</th><th>Tarifa (según ingresos)</th></tr></thead>
+        <tbody>
+          <tr><td>1 — Comercio y servicios en general</td><td>1,2&nbsp;% a 5,6&nbsp;%</td></tr>
+          <tr><td>2 — Mayoristas, construcción, industria</td><td>1,6&nbsp;% a 4,5&nbsp;%</td></tr>
+          <tr><td>3 — Servicios profesionales y consultoría</td><td>7,3&nbsp;% a 8,3&nbsp;%</td></tr>
+          <tr><td>4 — Alimentos, bebidas, transporte</td><td>3,1&nbsp;% a 4,5&nbsp;%</td></tr>
+        </tbody>
+      </table>
+      <div class="importante">
+        <p style="margin:0"><strong>Importante para dictar esta unidad en 2026:</strong> el 20 de julio de 2026 se radicó ante el Congreso un proyecto de reforma tributaria que propone, entre otros cambios, gravar los combustibles con IVA, subir el IVA a vehículos híbridos del 5&nbsp;% al 19&nbsp;%, y elevar la tarifa máxima de renta de personas naturales del 39&nbsp;% al 41&nbsp;%. A la fecha <strong>sigue siendo un proyecto de ley, no una norma vigente</strong>, y su aprobación es incierta por el cambio de Congreso y de Gobierno. Conviénele aclarar esto a los estudiantes para no presentar una propuesta como si ya fuera ley.</p>
+      </div>
+      <p class="base-legal"><strong>Base legal:</strong> Estatuto Tributario (Decreto 624 de 1989); Resolución DIAN 000238 de 2025 (UVT 2026); Ley 2010 de 2019 (Régimen Simple).</p>
+      <a class="back-top" href="#top">↑ Volver al contenido</a>
+    </section>
+
+    <section class="unit" id="unidad-4">
+      <h2>Unidad 4 — Facturación Electrónica</h2>
+      <p>La normativa vigente es la <a href="https://siemprealdia.co/colombia/impuestos/sistema-de-facturacion-electronica-en-colombia/" target="_blank" rel="noopener">Resolución DIAN 000165 del 1 de noviembre de 2023</a>, que consolidó y actualizó el sistema de facturación electrónica, modificada después por las Resoluciones 000008 y 000119 de 2024, 000189 de 2024 y 000202 de 2025.</p>
+      <p><strong>¿Quién está obligado a facturar electrónicamente?</strong> Los responsables de IVA y del impuesto al consumo, todos los comerciantes y profesionales (sin importar su régimen), los productores agropecuarios que venden sus productos, y los contribuyentes del Régimen Simple (con algunas excepciones). <strong>No están obligadas</strong>, entre otros: las entidades financieras y cooperativas (en sus operaciones financieras), personas con ingresos excluidos o no gravados inferiores a 3.500 UVT al año, y los operadores de transporte público.</p>
+      <p><strong>Cómo funciona el proceso:</strong></p>
+      <ol>
+        <li>La empresa (o su proveedor tecnológico) genera la factura en XML, firmada digitalmente según el anexo técnico vigente.</li>
+        <li>El XML se envía a la DIAN para <strong>validación previa</strong>: sin esa validación, la factura no tiene efectos fiscales.</li>
+        <li>La DIAN asigna el <strong>CUFE</strong> (Código Único de Facturación Electrónica), que identifica la factura de forma inequívoca.</li>
+        <li>Solo entonces la factura, ya validada, se entrega al comprador.</li>
+      </ol>
+      <p>Para emitir facturas hay tres caminos: el servicio gratuito de la DIAN, un desarrollo propio, o un proveedor tecnológico autorizado (la opción más usada por pequeñas empresas).</p>
+      <p class="practica">Cómo funciona en la práctica: si una tienda online emite una factura sin que la DIAN la valide antes (por ejemplo, por una falla del sistema), esa factura no es válida fiscalmente hasta que se corrija y se valide; de ahí la importancia del CUFE como "sello" de autenticidad.</p>
+      <p class="base-legal"><strong>Base legal:</strong> Resolución DIAN 000165 de 2023 y sus modificatorias (000008/2024, 000119/2024, 000189/2024, 000202/2025); Estatuto Tributario, Art. 616-1.</p>
+      <a class="back-top" href="#top">↑ Volver al contenido</a>
+    </section>
+
+    <section class="unit" id="unidad-5">
+      <h2>Unidad 5 — IVA y Retención en la Fuente</h2>
+      <p><strong>IVA (Impuesto al Valor Agregado):</strong></p>
+      <table>
+        <thead><tr><th>Tipo</th><th>Tarifa</th><th>Base legal (Estatuto Tributario)</th><th>Ejemplos</th></tr></thead>
+        <tbody>
+          <tr><td>General</td><td>19&nbsp;%</td><td>Art. 468 (vigente desde 2017)</td><td>La mayoría de bienes y servicios</td></tr>
+          <tr><td>Diferencial</td><td>5&nbsp;%</td><td>Arts. 468-1 y 468-3</td><td>Café tostado, azúcar, cereales, maquinaria agrícola, vehículos eléctricos/híbridos, medicina prepagada</td></tr>
+          <tr><td>Exento</td><td>0&nbsp;%</td><td>Arts. 477 a 481</td><td>Carne, leche, huevos, medicamentos, bienes exportados</td></tr>
+          <tr><td>Excluido</td><td>No aplica</td><td>Arts. 424 a 428</td><td>Azufre, dolomita, algunos servicios financieros</td></tr>
+        </tbody>
+      </table>
+      <p>La diferencia entre <strong>exento</strong> y <strong>excluido</strong> suele confundirse y vale la pena remarcarla: en los bienes <strong>exentos</strong> el vendedor sí es responsable de IVA (a tarifa 0&nbsp;%) y puede pedir devolución del IVA que pagó en sus insumos; en los bienes <strong>excluidos</strong> quien vende no es responsable de IVA, no lo cobra, y el IVA que pagó en sus propias compras se convierte en mayor costo (no lo recupera). (<a href="https://www.gerencie.com/diferencia-entre-bienes-excluidos-y-exentos-en-el-impuesto-a-las-ventas.html" target="_blank" rel="noopener">Fuente</a>)</p>
+      <p><strong>Retención en la fuente:</strong> no es un impuesto nuevo, es un mecanismo de <strong>recaudo anticipado</strong>: quien compra o paga un servicio retiene (descuenta) un porcentaje y lo consigna directamente a la DIAN a nombre de quien vendió; ese valor se descuenta luego de la declaración de renta del vendedor. Actúan como agentes retenedores las empresas y personas naturales obligadas a declarar renta. Tarifas vigentes en 2026 (bases calculadas con la UVT 2026 de $52.374):</p>
+      <table>
+        <thead><tr><th>Concepto</th><th>Declarantes</th><th>No declarantes</th><th>Base mínima</th></tr></thead>
+        <tbody>
+          <tr><td>Compras generales</td><td>2,5&nbsp;%</td><td>3,5&nbsp;%</td><td>$524.000</td></tr>
+          <tr><td>Compras con tarjeta débito/crédito</td><td>1,5&nbsp;%</td><td>1,5&nbsp;%</td><td>Sin base mínima</td></tr>
+          <tr><td>Servicios generales</td><td>4&nbsp;%</td><td>6&nbsp;%</td><td>$105.000</td></tr>
+          <tr><td>Honorarios y comisiones (personas jurídicas)</td><td>11&nbsp;%</td><td>—</td><td>Sin base mínima</td></tr>
+          <tr><td>Honorarios y comisiones (personas naturales)</td><td>11&nbsp;%</td><td>10&nbsp;%</td><td>Sin base mínima</td></tr>
+          <tr><td>Arrendamiento de inmuebles</td><td>3,5&nbsp;%</td><td>3,5&nbsp;%</td><td>$524.000</td></tr>
+        </tbody>
+      </table>
+      <p>(<a href="https://www.gerencie.com/tabla-de-retencion-en-la-fuente-2026.html" target="_blank" rel="noopener">Fuente</a>)</p>
+      <p class="practica">Cómo funciona en la práctica: si una empresa le paga a un contratista $1.000.000 por un servicio y es agente retenedor, le retiene el 4&nbsp;% ($40.000), le paga $960.000 y consigna los $40.000 a la DIAN a nombre del contratista.</p>
+      <p class="base-legal"><strong>Base legal:</strong> Estatuto Tributario, Arts. 365 a 419 (retención en la fuente) y los artículos de IVA citados arriba; Decreto 1625 de 2016 (único reglamentario tributario).</p>
+      <a class="back-top" href="#top">↑ Volver al contenido</a>
+    </section>
+
+    <section class="unit" id="unidad-6">
+      <h2>Unidad 6 — Comercio Electrónico y Normatividad (Ley 527 de 1999)</h2>
+      <p>La <a href="https://normativa.colpensiones.gov.co/colpens/docs/ley_0527_1999.htm" target="_blank" rel="noopener">Ley 527 de 1999</a> le dio validez jurídica a los negocios hechos por medios electrónicos en Colombia, antes de que existiera buena parte del comercio digital actual.</p>
+      <p><strong>Mensaje de datos</strong> (Art. 2): toda información generada, enviada, recibida, almacenada o comunicada por medios electrónicos, ópticos o similares —un correo electrónico, un mensaje de WhatsApp, un registro EDI, el clic en "aceptar" los términos de una tienda online—.</p>
+      <p><strong>Principio de equivalencia funcional</strong> —la idea central de la ley—: lo electrónico vale igual que lo físico.</p>
+      <ul>
+        <li>Art. 5: un mensaje de datos no pierde efectos jurídicos solo por ser electrónico (no se puede desconocer un contrato "porque fue por correo").</li>
+        <li>Art. 6: un mensaje de datos cumple el requisito legal de "escrito" si la información es accesible para su posterior consulta.</li>
+        <li>Art. 7: una firma digital puede reemplazar la firma manuscrita, siempre que identifique confiablemente a quien la usa.</li>
+      </ul>
+      <p><strong>Firma digital</strong> (Art. 2 la define; Art. 28 le da validez plena): un valor numérico que se adhiere a un mensaje usando un procedimiento matemático conocido, que permite verificar que el mensaje no ha sido alterado y quién lo originó.</p>
+      <p><strong>Entidades de certificación</strong> (Arts. 29 a 34): personas jurídicas autorizadas para emitir certificados de firma digital, registrar las transacciones y archivar los documentos electrónicos; deben acreditar capacidad técnica, financiera e idoneidad de sus administradores.</p>
+      <p class="practica">Cómo funciona en la práctica: cuando un cliente acepta los términos y condiciones de una tienda online con un clic, o cuando dos empresas cierran un negocio por intercambio de correos, esos "mensajes de datos" tienen la misma validez legal que un papel firmado a mano, gracias a esta ley.</p>
+      <p class="base-legal"><strong>Base legal:</strong> Ley 527 de 1999, Arts. 2, 5, 6, 7, 28 y 29 a 34.</p>
+      <a class="back-top" href="#top">↑ Volver al contenido</a>
+    </section>
+
+    <section class="unit" id="unidad-7">
+      <h2>Unidad 7 — Protección al Consumidor (Ley 1480 de 2011)</h2>
+      <p>La <a href="https://relatoria.colombiacompra.gov.co/normativa/ley-1480-de-2011/?print=pdf" target="_blank" rel="noopener">Ley 1480 de 2011</a> (Estatuto del Consumidor) regula dos figuras que los estudiantes suelen confundir: la <strong>garantía legal</strong> y el <strong>derecho de retracto</strong>. Diferencia clave para el aula: la garantía aplica cuando el producto falla; el retracto aplica cuando el cliente se arrepiente sin que nada haya fallado.</p>
+      <p><strong>Garantía legal</strong> (Art. 7): obligación de todo productor y/o proveedor de responder por la calidad, idoneidad, seguridad y buen funcionamiento de los productos (y, en servicios de medio, por la calidad conforme a normas o estándares del mercado). Plazos (Art. 8):</p>
+      <table>
+        <thead><tr><th>Tipo de bien o servicio</th><th>Plazo de garantía</th></tr></thead>
+        <tbody>
+          <tr><td>Productos nuevos</td><td>1 año desde la entrega (si no se pactó otro plazo)</td></tr>
+          <tr><td>Productos perecederos</td><td>Hasta la fecha de vencimiento</td></tr>
+          <tr><td>Productos usados</td><td>3 meses, salvo que se informe por escrito "sin garantía"</td></tr>
+          <tr><td>Reparaciones</td><td>3 meses desde la devolución del bien reparado</td></tr>
+          <tr><td>Inmuebles (estabilidad de la obra)</td><td>10 años</td></tr>
+          <tr><td>Inmuebles (acabados)</td><td>1 año</td></tr>
+        </tbody>
+      </table>
+      <p>La responsabilidad por la garantía es <strong>solidaria</strong> entre productor y proveedor (Art. 10): el consumidor solo debe probar que el defecto existe; demostrar una causal de exoneración le corresponde al productor o proveedor. La garantía cubre (Art. 11) reparación gratuita (incluido el transporte), cambio del bien o devolución del dinero si no es reparable, y disponibilidad de repuestos por un tiempo razonable.</p>
+      <p><strong>Derecho de retracto</strong> (Art. 47): facultad del comprador de arrepentirse de una compra <strong>sin necesidad de justificar su decisión</strong> y sin que haya incumplimiento del vendedor. Aplica en ventas a distancia, comercio electrónico y ventas por métodos no tradicionales (catálogo, call center). Plazo: <strong>5 días hábiles</strong> contados desde la entrega del producto. Excepciones: bienes perecederos, productos de uso personal (cosméticos, cepillos de dientes), productos hechos a la medida, servicios ya iniciados con consentimiento del consumidor, y loterías o juegos de azar. Si se ejerce el retracto, el proveedor debe devolver el dinero dentro de los 30 días calendario siguientes; el comprador asume el costo de devolución del producto.</p>
+      <p class="practica">Cómo funciona en la práctica: si un cliente compra una camisa en una tienda online y no le gusta al recibirla, puede devolverla por retracto dentro de los 5 días hábiles sin dar explicaciones; si la camisa llega con una costura rota, lo que aplica es la garantía legal, no el retracto.</p>
+      <p class="base-legal"><strong>Base legal:</strong> Ley 1480 de 2011, Arts. 5 (definiciones), 7, 8, 10 y 11 (garantía legal) y 47 (derecho de retracto).</p>
+      <a class="back-top" href="#top">↑ Volver al contenido</a>
+    </section>
+
+  </main>
+
+  <footer class="sources" id="fuentes">
+    <h2>Fuentes consultadas</h2>
+    <p>Cifras y normas verificadas en octubre de 2026. Las tarifas, topes y resoluciones cambian cada año: antes de un periodo nuevo vale la pena confirmar la UVT y las tablas de retención vigentes.</p>
+    <ul>
+      <li><a href="https://siemprealdia.co/colombia/impuestos/uvt-2026/" target="_blank" rel="noopener">Valor de la UVT 2026</a></li>
+      <li><a href="https://accounter.co/noticias/editorial/radicada-la-reforma-tributaria-2026-219-billones-en-juego-un-congreso-recien-instalado-y-un-gobierno-que-se-despide-en-dieciocho-dias" target="_blank" rel="noopener">Estado del proyecto de reforma tributaria 2026</a></li>
+      <li><a href="https://www.gerencie.com/tabla-de-retencion-en-la-fuente-2026.html" target="_blank" rel="noopener">Tabla de retención en la fuente 2026</a></li>
+      <li><a href="https://www.gerencie.com/tarifa-general-en-el-impuesto-a-las-ventas.html" target="_blank" rel="noopener">Tarifa general del IVA</a></li>
+      <li><a href="https://www.gerencie.com/diferencia-entre-bienes-excluidos-y-exentos-en-el-impuesto-a-las-ventas.html" target="_blank" rel="noopener">Diferencia entre bienes exentos y excluidos</a></li>
+      <li><a href="https://siemprealdia.co/colombia/impuestos/sistema-de-facturacion-electronica-en-colombia/" target="_blank" rel="noopener">Sistema de facturación electrónica DIAN</a></li>
+      <li><a href="https://siemprealdia.co/colombia/impuestos/regimen-simple-de-tributacion/" target="_blank" rel="noopener">Régimen Simple de Tributación</a></li>
+      <li><a href="https://normativa.colpensiones.gov.co/compilacion/docs/codigo_comercio.htm" target="_blank" rel="noopener">Código de Comercio (Decreto 410 de 1971), texto completo</a></li>
+      <li><a href="https://normativa.colpensiones.gov.co/colpens/docs/ley_0527_1999.htm" target="_blank" rel="noopener">Ley 527 de 1999, texto completo</a></li>
+      <li><a href="https://relatoria.colombiacompra.gov.co/normativa/ley-1480-de-2011/?print=pdf" target="_blank" rel="noopener">Ley 1480 de 2011, texto completo</a></li>
+      <li><a href="https://bogota.gov.co/mi-ciudad/desarrollo-economico/matricula-mercantil-4-pasos-sencillos-para-renovarla-por-internet" target="_blank" rel="noopener">Matrícula mercantil: pasos y renovación</a></li>
+      <li><a href="https://www.asuntoslegales.com.co/consumidor/todo-lo-que-debe-saber-sobre-el-derecho-al-retracto-y-mire-en-que-situaciones-aplica-3785770" target="_blank" rel="noopener">Derecho de retracto: artículo 47 de la Ley 1480</a></li>
+    </ul>
+  </footer>
+
+</div>
+</body>
+</html>
